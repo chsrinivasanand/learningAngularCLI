@@ -1,20 +1,4 @@
-import { Component } from '@angular/core';
-
-
-@Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
-})
-export class AppComponent {
-  title = 'LearningAngularCLI application';
-  query: string ;
-  artists: Object;
-
-  constructor () {
-    this.query = 'Barot';
-
-    this.artists = [
+[
   {
     "name":"Barot Bellingham",
     "shortname":"Barot_Bellingham",
@@ -70,8 +54,3 @@ export class AppComponent {
     "bio":"A senior at the China International Art University, Xhou has become well-known for his miniature sculptures, often the size of a rice granule, that are displayed by rear projection of microscope images on canvas. Xhou will discuss the art and science behind his incredibly detailed works of art."
   }
 ]
-
- ;
-
-  }
-}
