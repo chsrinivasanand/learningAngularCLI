@@ -16,6 +16,7 @@ export class AppComponent implements OnInit {
     item.highlight = !item.highlight;
   }
   constructor (private http: HttpClient)  {
+        this.query = ' ';
         this.artists = [ ] ;
 
   }
