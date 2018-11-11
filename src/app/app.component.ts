@@ -10,13 +10,16 @@ export class AppComponent implements OnInit {
   title = 'LearningAngularCLI application';
   query: string ;
   artists: Object;
+  currentArtist: Object;
+
   showArtists(e, item) {
     console.log(e);
     this.query = item.name ;
     item.highlight = !item.highlight;
+    this.currentArtist = item ;
   }
   constructor (private http: HttpClient)  {
-        this.query = ' ';
+        this.query = '';
         this.artists = [ ] ;
 
   }
