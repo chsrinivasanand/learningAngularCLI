@@ -10,11 +10,12 @@ export class AppComponent {
   title = 'LearningAngularCLI application';
   query: string ;
   artists: Object;
-
+  showArtists(e, item) {
+    console.log(e);
+    this.query = item.name ;
+  }
   constructor () {
-    this.query = 'Barot';
-
-    this.artists = [
+        this.artists = [
   {
     "name":"Barot Bellingham",
     "shortname":"Barot_Bellingham",
