@@ -13,6 +13,7 @@ export class AppComponent {
   showArtists(e, item) {
     console.log(e);
     this.query = item.name ;
+    item.highlight = !item.highlight;
   }
   constructor ()  {
         this.artists = [
